@@ -34,15 +34,16 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   //workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  // reporter: 'html',
+  reporter: 'html',
+     /*
       reporter: [
     ['playwright-smart-reporter', {
       outputFile: '../TestReport/NotesApp_Master_Report.html',
       historyFile: 'test-history.json',
       maxHistoryRuns: 10,
       performanceThreshold: 0.2,
-      slackWebhook: process.env.SLACK_WEBHOOK_URL,
-      teamsWebhook: process.env.TEAMS_WEBHOOK_URL,
+      // slackWebhook: process.env.SLACK_WEBHOOK_URL,
+      // teamsWebhook: process.env.TEAMS_WEBHOOK_URL,
       // Feature flags
       enableRetryAnalysis: true,
       enableFailureClustering: true,
@@ -56,7 +57,7 @@ export default defineConfig({
       retryFailureThreshold: 3,
       baselineRunId: 'main-branch-baseline', // optional
     }],
-  ],
+  ],*/
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
