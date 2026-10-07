@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 import { AccessToken } from './BaseTest'
-import notes from '../TestData/create_note.json'   // Import JSON directly
+import notes from '../TestData/Create_Note.json'   // Import JSON directly
 
 test.describe('Create Notes API Testing @smoke', () => {
   const baseUrl = 'https://practice.expandtesting.com'
